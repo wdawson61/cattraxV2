@@ -21,7 +21,7 @@ is archived in [wdawson61/cattrax](https://github.com/wdawson61/cattrax).
 | `electrical/board/` | Main board KiCad project, pin/connection table, fab outputs | elec |
 | `electrical/flex/` | Flex strip generator (`flex_strip.py` → DXF/PNG) | both |
 | `electrical/dock/` | Pogo charging/SWD dock | elec |
-| `electrical/kicad_libs/` | Shared KiCad libraries (submodule) | elec |
+| `electrical/kicad_lib2/` | Shared KiCad libraries (submodule `wdawson61/kicad_lib2`) | elec |
 | `mechanical/cad/` | CadQuery scripts for case, pod, cap, clasp, mould | mech |
 | `mechanical/sheets/` | Section and preview sheets | mech |
 | `mechanical/tests/`, `mechanical/casting/` | Test pieces, pull tests, casting log | mech |
