@@ -1,0 +1,58 @@
+Block,Net,Part.Pin (name),Connects to,Notes / verify against datasheet
+Dock,VBUS_PAD,J1 dock target VBUS,D1 TPD1E10B06; U2 nPM1300 VBUS; R1 100k (top of SEL divider),Bulk/bypass cap on VBUS per nPM1300 datasheet
+Dock,GND,J2 dock target GND,GND,
+Dock,SWDIO_PAD,J3 dock target SWDIO,D3 TPD1E10B06; U4 TMUX1101 S; R4 1M to GND (optional),
+Dock,SWCLK_PAD,J4 dock target SWCLK,D4 TPD1E10B06; U5 TMUX1101 S; R5 1M to GND (optional),
+Dock,SEL_VBUS,R1/R2 divider midpoint (100k over 150k to GND),U4 TMUX1101 SEL; U5 TMUX1101 SEL,Gives ~3 V when docked; check SEL VIH at VDD 3.3 V
+Debug,SWDIO,U1 nRF54L10 SWDIO (pin 25),U4 TMUX1101 D,
+Debug,SWCLK,U1 nRF54L10 SWDCLK (pin 26),U5 TMUX1101 D,
+Debug,3V3_A,U4/U5 TMUX1101 VDD,3V3_A,100 nF each
+Power,VBAT,Flex BAT+ pad (via flex VBAT trace),U2 nPM1300 VBAT,Cap per nPM1300 datasheet; cell has its own protection PCB
+Power,GND,Flex GND pad (counterpoise arm),GND,Also the 915 MHz antenna's second arm
+Power,VSYS,U2 nPM1300 VSYS,U2 PVDD (buck inputs),Verify pin names (VSYS / PVDD) and caps
+Power,3V3_A,U2 nPM1300 VOUT2 (via inductor from SW2),U1 VDD; U3 MIA-M10Q VCC (or via LSOUT1); U6 LIS2DW12 Vdd + Vdd_IO; U4/U5 VDD; U2 VDDIO; I2C pull-ups,BUCK2; VSET2 = 390k 1% sets 3.3 V at power-on (VSET1 max is 2.7 V); inductor value and output cap per datasheet
+Power,3V3_RF,U2 nPM1300 VOUT1 (via inductor from SW1),U7 SX1262 VBAT + VBAT_IO,BUCK1; starts off (VSET1 to GND); firmware sets 3.3 V over I2C and enables before radio use; force PWM during TX; SX1262 TX bursts ~120 mA at +22 dBm
+Power,VSET1,U2 nPM1300 VSET1,GND (<100 ohm),BUCK1 off at power-up; 3V3_RF enabled by firmware
+Power,VSET2,U2 nPM1300 VSET2,390k 1% to GND,3.3 V at power-up (250-500k band)
+Power,GNSS_PWR (optional),U2 nPM1300 LSOUT1,U3 MIA-M10Q VCC,LSIN1 from 3V3_A; lets firmware fully power off GNSS
+Power,GNSS_BCKP,U3 MIA-M10Q V_BCKP (if present),3V3_A direct,Keeps hot-start data while VCC is off; verify the pin exists
+Power,SHPHLD,U2 nPM1300 SHPHLD,Reed or Hall switch to GND (optional),Magnet wake from ship mode; docking (VBUS) also wakes
+Power,NTC,U2 nPM1300 NTC,Fixed resistor per datasheet (no thermistor in cell),Or disable NTC in config; verify
+I2C,I2C_SDA,U1 nRF54L10 P0.02 (TWIM30 SDA),U2 SDA; U3 SDA; U6 SDA; 4.7k to 3V3_A,
+I2C,I2C_SCL,U1 nRF54L10 P0.03 (TWIM30 SCL; clock-capable pin),U2 SCL; U3 SCL; U6 SCL; 4.7k to 3V3_A,SCL must be on a clock-capable pin
+IRQ,GNSS_TXRDY,U3 MIA-M10Q TX_READY (configurable pin),U1 P0.00,Pick the M10 pin via CFG-TXREADY; verify which pin is free on MIA-M10Q
+IRQ,ACC_INT1,U6 LIS2DW12 INT1,U1 P0.01,Wake-up interrupt; INT2 unused or to a spare test pad
+IRQ,PMIC_INT,U2 nPM1300 GPIO1 (WLCSP E6 / outer row),U1 P0.04,GPIO0/2/3 are interior balls on the WLCSP; leave them open
+Reset,nRESET,U1 nRF54L10 nRESET,Test pad only,PMIC watchdog / failed-boot recovery power-cycles the rails; no PMIC GPIO needed
+I2C dev,ACC_CFG,U6 LIS2DW12 CS,3V3_A (I2C mode),SA0 to GND or 3V3_A to set the address; pin 7 RES to GND; pin 5 NC
+SPI,LR_SCK,U1 P1.04 (SPIM21 SCK; clock-capable),U7 SX1262 SCK,
+SPI,LR_MOSI,U1 P1.05,U7 SX1262 MOSI,
+SPI,LR_MISO,U1 P1.06,U7 SX1262 MISO,
+SPI,LR_NSS,U1 P1.07,U7 SX1262 NSS,
+SX1262,LR_IRQ,U7 SX1262 DIO1,U1 P1.08,P1 supports GPIOTE
+SX1262,LR_BUSY,U7 SX1262 BUSY,U1 P1.09,
+SX1262,LR_NRESET,U7 SX1262 NRESET,U1 P1.10,
+SX1262,LR_RFSW,U7 SX1262 DIO2,U8 SPDT RF switch control,SetDio2AsRfSwitchCtrl; add inverter or a spare MCU pin if the switch needs complementary controls
+SX1262,LR_TCXO,U7 SX1262 DIO3,TCXO supply (if TCXO chosen),Leave open / test pad if using a crystal
+SX1262,LR_XTAL,U7 SX1262 XTA / XTB,32 MHz crystal (+ load caps) or TCXO into XTA,Check Semtech reference design and frequency-error limits
+SX1262,LR_DCDC,U7 SX1262 DCC_SW / VREG,DC-DC inductor + VREG cap per SX1262 datasheet,
+SX1262,LR_VBAT,U7 SX1262 VBAT / VBAT_IO,3V3_RF,Decoupling per reference design
+SX1262,RF_TX,U7 SX1262 RFO,TX match -> U8 RF switch TX port,HP PA; values from Semtech 915 MHz reference
+SX1262,RF_RX,U7 SX1262 RFI_P / RFI_N,RX balun/match -> U8 RF switch RX port,
+SX1262,RF_ANT,U8 RF switch common port,915 MHz matching network -> ANT_915 pad,
+RF 915,ANT_915,915 MHz matching network output,Board-bottom ANT pad (feed via just beside the pad; not in it) -> flex antenna arm,Tented via; ring with ground vias; tune on cast band
+GNSS,GNSS_RF,U3 MIA-M10Q RF_IN,E1 ACAG0301 GNSS chip antenna (via its match),
+GNSS,GNSS_RESET_N,U3 MIA-M10Q RESET_N,U1 P1.11,Optional
+GNSS,GNSS_EXTINT,U3 MIA-M10Q EXTINT,U1 P1.12,Optional wake
+GNSS,GNSS_UART,U3 MIA-M10Q TXD / RXD,Test pads only,For u-center bring-up
+nRF54L10,XL1/XL2,U1 P1.00 / P1.01 (pins 1/2),X1 32.768 kHz crystal (2012),Internal load caps; no external caps (Nordic ref v0.8)
+nRF54L10,XC1/XC2,U1 XC1 / XC2 (pins 34/35),X2 32 MHz crystal (2016),No load caps (Nordic ref v0.8); crystal spec from datasheet
+nRF54L10,DCC,U1 DCC (pin 46),L1 4.7 uH 0603 -> DECD,
+nRF54L10,DECD,U1 DECD (pin 45),C1 2.2 uF; L1; FB1 ferrite -> DECA,
+nRF54L10,DECA,U1 DECA (43) + DECRF (33),C2 2.2 uF; C12 10 nF; C5 2.2 nF; FB1,
+nRF54L10,VDD,U1 VDD (pins 10/22/36/47/48),3V3_A; C3 10 uF 0402 + C10 100 nF at 47/48; C4/C7/C8 100 nF at 10/22/36,
+nRF54L10,RESET,U1 RESET (pin 30),C13 3.9 pF to GND; R1 1 k in series -> NRESET net (test pad),
+nRF54L10,ANT_24,U1 ANT (pin 31),L2 2.7 nH -> C6 1.5 pF shunt -> L3 3.5 nH -> C9 2.0 pF shunt -> L4 3.5 nH -> C11 0.3 pF shunt -> RF -> 2.4 GHz chip antenna match,C6 ground to VSS_PA pin 32 only; C9 ground to bottom ground layer only
+nRF54L10,VSS_PA,U1 VSS_PA (pin 32),C6 ground; connect to centre pad (pin 49) under package only,
+nRF54L10,VSS,U1 VSS (pin 44) + centre pad (pin 49),GND,
+nRF54L10,SPARE,U1 P1.02/P1.03 (NFC pins; set GPIO in UICR); P1.13/P1.14 (AIN); P2.00-P2.10,Spare / test pads,P2 has no GPIOTE: no interrupts there

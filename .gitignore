@@ -1,0 +1,37 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# KiCad
+*-backups/
+*.kicad_prl
+*.lck
+~*.lck
+fp-info-cache
+_autosave-*
+*.bak
+
+# Fab outputs are committed per release under electrical/board/fab/<rev>/; scratch exports are not
+electrical/**/gerber_tmp/
+
+# Mechanical: generated geometry is rebuilt from mechanical/cad/ (attach to GitHub Releases)
+*.step
+*.stp
+*.stl
+*.3mf
+mechanical/out/
+
+# Datasheets: vendor PDFs stay local; datasheets/index.md is tracked
+datasheets/**/*.pdf
+
+# Firmware
+build/
+build_*/
+twister-out*/
