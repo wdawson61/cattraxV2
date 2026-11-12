@@ -1,0 +1,3 @@
+[submodule "electrical/kicad_libs"]
+	path = electrical/kicad_libs
+	url = https://github.com/wdawson61/kicad_libs.git
