@@ -5,6 +5,9 @@ the linked brief or check.
 
 | Date | Decision | Where it's argued |
 |---|---|---|
+| 2026-11-19 | Dock USB-UART: WCH CH343P, VIO = 1.8 V from an LDO, core from USB 5 V | `checks/2026-11-19-dock-usb-uart.md`, `electrical/dock/README.md` |
+| 2026-11-18 | Dock contacts VBUS, GND, UART TX/RX (MCUboot serial recovery); SWD only on internal test pads | `notes/2026-11-19-dock-to-elec.md` §2 |
+| 2026-11-18 | Main rail 1.8 V (SX1262 VBAT_IO on it); 3.3 V rail for the SX1262 VBAT only; no level shifters | `notes/2026-11-19-dock-to-elec.md` §1 |
 | 2026-11-12 | New repo (cattraxV2); cattrax.6 archived in the old repo | — |
 | 2026-11-12 | Firmware on the nRF Connect SDK, as a freestanding application | `firmware/README.md` |
 | 2026-11-12 | Breakaway sensor: TMAG3001A2 on the flex tip under the cell, own I2C bus, sensor lines choked at x ≈ 60–64 | `checks/2026-11-12-hall-sensor.md` |

@@ -20,7 +20,7 @@ is archived in [wdawson61/cattrax](https://github.com/wdawson61/cattrax).
 | `datasheets/` | Local PDFs by subsystem (not committed) + `index.md` (committed) | — |
 | `electrical/board/` | Main board KiCad project, pin/connection table, fab outputs | elec |
 | `electrical/flex/` | Flex strip generator (`flex_strip.py` → DXF/PNG) | both |
-| `electrical/dock/` | Pogo charging/SWD dock | elec |
+| `electrical/dock/` | Pogo charging + UART dock (CH343P, 1.8 V) | elec |
 | `electrical/kicad_lib2/` | Shared KiCad libraries (submodule `wdawson61/kicad_lib2`) | elec |
 | `mechanical/cad/` | CadQuery scripts for case, pod, cap, clasp, mould | mech |
 | `mechanical/sheets/` | Section and preview sheets | mech |
