@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "symbol")(type "KiCad")(uri "${KIPRJMOD}/../kicad_lib2/symbol/symbol.kicad_sym")(options "")(descr "wdawson61/kicad_lib2 submodule: non-standard parts"))
+)

@@ -5,6 +5,12 @@ the linked brief or check.
 
 | Date | Decision | Where it's argued |
 |---|---|---|
+| 2026-11-23 | RF switch PE4259 (LCSC C470892) in single-pin mode: VDD = LR_VIO, CTRL = DIO2 via 1 kΩ; replaces SKY13323 + LV1T34/LV1T04 (supersedes 2026-11-20 §5) | `checks/2026-11-20-power-rails.md` §5 (update) |
+| 2026-11-20 | Keep the nPM1300 (nPM1304 not stocked at LCSC; BQ25190 and MAX77654 rejected) | `checks/2026-11-20-power-rails.md` §1 |
+| 2026-11-20 | GNSS on its own TPS62840 1.8 V buck from VSYS, EN = GNSS_EN + 1 MΩ pull-down; replaces the TPS7A20 LDO | `checks/2026-11-20-power-rails.md` §2 |
+| 2026-11-20 | SX1262 VBAT_IO via nPM1300 LOADSW1 (off at power-on, enabled by firmware) so VBAT_IO ≤ VBAT always | `checks/2026-11-20-power-rails.md` §3 |
+| 2026-11-20 | Main rail stays 1.8 V nominal; 1.9 V over I2C is an acceptable fallback | `checks/2026-11-20-power-rails.md` §4 |
+| 2026-11-20 | ~~RF switch SKY13323-378LF, driven by SN74LV1T34 (TX) + SN74LV1T04 (RX) at 3.3 V from DIO2~~ (superseded 2026-11-23) | `checks/2026-11-20-power-rails.md` §5 |
 | 2026-11-19 | Dock USB-UART: WCH CH343P, VIO = 1.8 V from an LDO, core from USB 5 V | `checks/2026-11-19-dock-usb-uart.md`, `electrical/dock/README.md` |
 | 2026-11-18 | Dock contacts VBUS, GND, UART TX/RX (MCUboot serial recovery); SWD only on internal test pads | `notes/2026-11-19-dock-to-elec.md` §2 |
 | 2026-11-18 | Main rail 1.8 V (SX1262 VBAT_IO on it); 3.3 V rail for the SX1262 VBAT only; no level shifters | `notes/2026-11-19-dock-to-elec.md` §1 |

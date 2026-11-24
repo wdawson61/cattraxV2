@@ -1,0 +1,1614 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "1280f897-b7c2-49b2-ad35-96b72642a045")
+	(paper "A3")
+	(title_block
+		(title "cattraxV2 main board — top level")
+		(date "2026-11-20")
+		(rev "A")
+		(comment 1 "Generated from datasheets by tools/gen_board_schematic.py")
+		(comment 2 "Power rails are global power symbols: +1V8, +3V3_RF, VBAT, VBUS, GND")
+	)
+	(lib_symbols)
+	(text "Blocks: power (nPM1300) | mcu (nRF54L10 + 2.4 GHz) | lora (SX1262 + SKY13323 + 915 match) | gnss (MIA-M10Q + TPS62840)\nsensors (LIS2DW12 + I2C pull-ups) | dock (targets, ESD, TMUX1101) | flex_pads (ANT, MECH, GND, VBAT)\nPin->net table for review: electrical/board/netlist_check.csv"
+		(exclude_from_sim no)
+		(at 50.8 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "2225a9cf-1d43-4ad9-b08c-e6bd464fe675")
+	)
+	(wire
+		(pts
+			(xy 172.72 66.04) (xy 167.64 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0196d016-1d15-4e55-92ac-b22e4fa70018")
+	)
+	(wire
+		(pts
+			(xy 218.44 106.68) (xy 223.52 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "057cf71e-d5e0-4416-a3bc-9dc6d7eb4225")
+	)
+	(wire
+		(pts
+			(xy 299.72 66.04) (xy 294.64 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28a36d28-e6ba-432d-ae13-8fc6e2ce4b9e")
+	)
+	(wire
+		(pts
+			(xy 218.44 96.52) (xy 223.52 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b948d10-0342-44de-b6e9-ca23ac887c94")
+	)
+	(wire
+		(pts
+			(xy 299.72 170.18) (xy 294.64 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d0bd9b0-b5e4-4ec2-904c-960ecfc835b7")
+	)
+	(wire
+		(pts
+			(xy 91.44 60.96) (xy 96.52 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3218f9ea-e22f-4591-abf2-99c859feb3be")
+	)
+	(wire
+		(pts
+			(xy 91.44 111.76) (xy 96.52 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3729bb97-12d4-40ed-82bb-07344b8d4625")
+	)
+	(wire
+		(pts
+			(xy 172.72 60.96) (xy 167.64 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "395abcde-36fb-402b-be9a-46c2345a481b")
+	)
+	(wire
+		(pts
+			(xy 91.44 66.04) (xy 96.52 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47818dcd-06e6-4b59-a12d-4c702c1f237b")
+	)
+	(wire
+		(pts
+			(xy 218.44 55.88) (xy 223.52 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48e2559e-5673-44f8-9152-01c3d45cfb30")
+	)
+	(wire
+		(pts
+			(xy 299.72 154.94) (xy 294.64 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "497592a9-687a-417f-a292-4d9bfb9e03db")
+	)
+	(wire
+		(pts
+			(xy 172.72 55.88) (xy 167.64 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "525905a0-d61e-4380-b684-1f8f0d583ecb")
+	)
+	(wire
+		(pts
+			(xy 299.72 71.12) (xy 294.64 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e2f0e31-f064-42ea-919e-21e66364967a")
+	)
+	(wire
+		(pts
+			(xy 299.72 114.3) (xy 294.64 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f012c50-1426-46b4-b07a-25bbdeb2e146")
+	)
+	(wire
+		(pts
+			(xy 218.44 91.44) (xy 223.52 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62802878-a6ff-4383-8b7f-00c7679bbd2e")
+	)
+	(wire
+		(pts
+			(xy 299.72 165.1) (xy 294.64 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "646ed9a2-8f71-4cc0-9eaf-9883cc410b7c")
+	)
+	(wire
+		(pts
+			(xy 299.72 144.78) (xy 294.64 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "662a9b59-b89b-47bf-b361-fea1fac5990f")
+	)
+	(wire
+		(pts
+			(xy 218.44 81.28) (xy 223.52 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66c1e71f-20d8-484f-bf82-3cdef7783910")
+	)
+	(wire
+		(pts
+			(xy 172.72 50.8) (xy 167.64 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cfdfd21-b954-4a2d-a739-1ed18af680fe")
+	)
+	(wire
+		(pts
+			(xy 218.44 50.8) (xy 223.52 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d4531b9-60ee-46cb-98f8-3d45f6dd4b89")
+	)
+	(wire
+		(pts
+			(xy 218.44 60.96) (xy 223.52 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75034b85-5404-467e-9efc-3cff1e11c242")
+	)
+	(wire
+		(pts
+			(xy 299.72 160.02) (xy 294.64 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76af1491-adbd-4d47-9ac7-6b2598bb32aa")
+	)
+	(wire
+		(pts
+			(xy 91.44 144.78) (xy 96.52 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "813000ea-f58d-4573-93c3-b467f3bdf80e")
+	)
+	(wire
+		(pts
+			(xy 172.72 71.12) (xy 167.64 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "930866c6-f779-4f43-82cc-38e5d3357a51")
+	)
+	(wire
+		(pts
+			(xy 218.44 66.04) (xy 223.52 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a08a0b59-4c02-4f84-98af-a5a3c279f78d")
+	)
+	(wire
+		(pts
+			(xy 299.72 60.96) (xy 294.64 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2fb091f-da8d-4898-a51f-3c3bb957110a")
+	)
+	(wire
+		(pts
+			(xy 91.44 50.8) (xy 96.52 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4ee2eec-0858-46f6-9306-446120a6f44c")
+	)
+	(wire
+		(pts
+			(xy 218.44 101.6) (xy 223.52 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aec6dd15-c456-4664-8536-5feab1aadd04")
+	)
+	(wire
+		(pts
+			(xy 299.72 76.2) (xy 294.64 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd3e2b9a-a575-4ff5-b335-0fadf3d82b7c")
+	)
+	(wire
+		(pts
+			(xy 299.72 104.14) (xy 294.64 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdf16741-ba47-4250-8285-763c050b5894")
+	)
+	(wire
+		(pts
+			(xy 299.72 139.7) (xy 294.64 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4e56597-bca6-4bdf-b275-6b8b02bc4243")
+	)
+	(wire
+		(pts
+			(xy 91.44 55.88) (xy 96.52 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2fdd41b-93db-4620-9bed-e2f62f289bba")
+	)
+	(wire
+		(pts
+			(xy 299.72 175.26) (xy 294.64 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d43d1e38-bc80-48b6-9eed-e1974fc7428d")
+	)
+	(wire
+		(pts
+			(xy 91.44 106.68) (xy 96.52 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4aff7a8-ed24-415e-9135-69b4b6a0c066")
+	)
+	(wire
+		(pts
+			(xy 299.72 55.88) (xy 294.64 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e26aa884-1f01-4a86-a18d-a8f84507d2d9")
+	)
+	(wire
+		(pts
+			(xy 340.36 139.7) (xy 345.44 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3b4d1c3-bce2-42c3-b809-3bb88cc8e83d")
+	)
+	(wire
+		(pts
+			(xy 218.44 76.2) (xy 223.52 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edfc02a3-33e8-4486-88cd-71e9f13e18bb")
+	)
+	(wire
+		(pts
+			(xy 299.72 109.22) (xy 294.64 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6939697-0fdc-44e0-ad23-0d1266ab8cf8")
+	)
+	(wire
+		(pts
+			(xy 218.44 86.36) (xy 223.52 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8a98389-aaee-4657-ac35-a62b555e2d9d")
+	)
+	(wire
+		(pts
+			(xy 299.72 50.8) (xy 294.64 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa27c9e1-eb2f-4499-a7c7-ff462078a7ea")
+	)
+	(wire
+		(pts
+			(xy 299.72 149.86) (xy 294.64 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff74d398-082e-4bc7-9f07-6f7ef0cf706d")
+	)
+	(wire
+		(pts
+			(xy 218.44 71.12) (xy 223.52 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff9186b9-fa23-4c2a-831a-a45cf7d9788a")
+	)
+	(label "I2C_SDA"
+		(at 96.52 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0bf64004-594a-4a4d-abea-0bb6f916d947")
+	)
+	(label "I2C_SCL"
+		(at 294.64 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0cc9232c-5717-41c2-be58-e9ad1defb311")
+	)
+	(label "LR_VIO"
+		(at 294.64 175.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0de435a7-d9d9-42a7-a284-ad51ee6bbcca")
+	)
+	(label "LR_BUSY"
+		(at 223.52 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e72f0d3-a1f0-493a-8974-9b5a2e2a501a")
+	)
+	(label "LR_SCK"
+		(at 223.52 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f422625-d5d3-4f96-ace8-b3cd946dca4b")
+	)
+	(label "LR_NSS"
+		(at 223.52 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "12d91241-54a8-4244-bc17-3c794b100d80")
+	)
+	(label "ANT_915"
+		(at 345.44 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1df4b3bb-e572-4d25-a2a8-fa48bd9a5a6f")
+	)
+	(label "LR_MISO"
+		(at 223.52 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "21d10ff1-d1c9-49db-9581-dc8b6c1db46c")
+	)
+	(label "UART_TX"
+		(at 96.52 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23f8c882-1603-46ee-bf74-d4931a30dbe4")
+	)
+	(label "GNSS_EXTINT"
+		(at 294.64 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2435bf96-c12b-484b-9ca1-5c6873b73088")
+	)
+	(label "I2C_SDA"
+		(at 167.64 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "461c19b0-c60d-479d-a639-da94644fec31")
+	)
+	(label "LR_SCK"
+		(at 294.64 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4ec45bc1-987d-4598-b139-c6bd9a0c55e4")
+	)
+	(label "LR_BUSY"
+		(at 294.64 165.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4eca8f1f-b87c-4e6e-bb86-669b3935d3d7")
+	)
+	(label "LR_NRESET"
+		(at 294.64 170.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4f211193-12ce-4ed7-9126-e934aef6aa91")
+	)
+	(label "GNSS_EN"
+		(at 223.52 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5fd53bc8-0e29-44af-b78f-aa657c5521de")
+	)
+	(label "I2C_SDA"
+		(at 294.64 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63f003cf-c518-4df3-8fee-4f94e814c798")
+	)
+	(label "GNSS_EN"
+		(at 294.64 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "687e9d71-389a-4fb7-8a17-5efe2052ac52")
+	)
+	(label "LR_IRQ"
+		(at 223.52 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "75936d2b-8ff7-4bda-8068-6374d2691fd7")
+	)
+	(label "LR_VIO"
+		(at 96.52 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "764cec2e-8ceb-4729-bfc2-002e43483a99")
+	)
+	(label "I2C_SCL"
+		(at 167.64 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "81442b15-30e6-4b1c-ac8c-4e7b165c202b")
+	)
+	(label "UART_TX"
+		(at 167.64 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "822065d3-4322-4539-919d-97274b8eb302")
+	)
+	(label "ANT_915"
+		(at 96.52 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8682395f-7aa2-4361-8e5d-48ff5ba02b92")
+	)
+	(label "PMIC_INT"
+		(at 96.52 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "95d915c8-e755-41b1-8f77-98c0b7b38aa9")
+	)
+	(label "I2C_SCL"
+		(at 96.52 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9935dc72-0824-4cf1-84da-be5bd87cfd27")
+	)
+	(label "GNSS_TXRDY"
+		(at 223.52 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9fcd3d7d-d1e6-4a98-a055-06db03d8c54d")
+	)
+	(label "ACC_INT1"
+		(at 294.64 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a42269aa-4d7e-41d5-b588-c67cffefbb26")
+	)
+	(label "LR_NSS"
+		(at 294.64 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "afcf8738-376a-4a6b-b4d3-6e7d0ad20914")
+	)
+	(label "UART_RX"
+		(at 167.64 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b801c58a-4859-49f1-a4df-fdc214f7f608")
+	)
+	(label "GNSS_TXRDY"
+		(at 294.64 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b9497c2a-89b6-4ee2-a907-203d05fb7bdf")
+	)
+	(label "UART_RX"
+		(at 96.52 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba9470d6-fcf5-4766-8f5b-e3c099195995")
+	)
+	(label "LR_IRQ"
+		(at 294.64 160.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c45d9e7b-b495-4464-b737-89c04f10df89")
+	)
+	(label "I2C_SDA"
+		(at 294.64 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cb131b2f-71b2-4787-887e-c0f15aac15c8")
+	)
+	(label "LR_MOSI"
+		(at 294.64 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d2cf1c89-78f6-4604-a4c8-59c4da5fb6ed")
+	)
+	(label "GNSS_RESET_N"
+		(at 294.64 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d56bc182-571b-4fd4-bf1f-d42bdc0b6161")
+	)
+	(label "LR_MISO"
+		(at 294.64 149.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d6430217-99e1-49bc-bf70-38cee319a2ad")
+	)
+	(label "ACC_INT1"
+		(at 223.52 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d855468d-7103-4f4e-8ee7-768edd173763")
+	)
+	(label "I2C_SCL"
+		(at 294.64 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dc154ca2-20df-43a2-a366-9248570100ff")
+	)
+	(label "LR_NRESET"
+		(at 223.52 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df248c64-133e-429e-83bd-fba680e202cc")
+	)
+	(label "LR_MOSI"
+		(at 223.52 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e96b5c50-f9fa-45cc-975e-75c38cf963ac")
+	)
+	(label "GNSS_RESET_N"
+		(at 223.52 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eb650307-18c0-46d0-956f-df64c70d7afe")
+	)
+	(label "PMIC_INT"
+		(at 167.64 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f980e82d-4ce2-4116-8901-cd12bd8e51f7")
+	)
+	(label "GNSS_EXTINT"
+		(at 223.52 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa9e2de9-58f4-426c-b5d8-3b767dc73ff6")
+	)
+	(sheet
+		(at 299.72 134.62)
+		(size 40.64 45.72)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0cab277a-16c0-41e4-8d4f-3a7b0f2bcb8a")
+		(property "Sheetname" "lora"
+			(at 299.72 133.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "lora.kicad_sch"
+			(at 299.72 180.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LR_SCK" input
+			(at 299.72 139.7 180)
+			(uuid "7708f4fd-3264-4218-8675-e3fb2ef816f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LR_MOSI" input
+			(at 299.72 144.78 180)
+			(uuid "52e868f9-7722-4555-abb2-595ece21cbcb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LR_MISO" output
+			(at 299.72 149.86 180)
+			(uuid "f05181c9-d508-429b-af4c-fc6c13e29731")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LR_NSS" input
+			(at 299.72 154.94 180)
+			(uuid "bd065cb4-3651-461c-b055-d0498d388cb9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LR_IRQ" output
+			(at 299.72 160.02 180)
+			(uuid "e9bf68f4-6146-4f70-a0cd-fb73f4bba695")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LR_BUSY" output
+			(at 299.72 165.1 180)
+			(uuid "e4e5dd0c-7c2b-4a38-ae33-db43a822008d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LR_NRESET" input
+			(at 299.72 170.18 180)
+			(uuid "994c7391-8a2b-4f24-9bbb-c8425e510333")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LR_VIO" input
+			(at 299.72 175.26 180)
+			(uuid "37bbe58d-13ee-45cb-9c76-6c90f7fa5d70")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ANT_915" passive
+			(at 340.36 139.7 0)
+			(uuid "96c466db-b929-4ec5-9c23-7d7339a0a619")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "cattraxv2_main"
+				(path "/1280f897-b7c2-49b2-ad35-96b72642a045"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 299.72 45.72)
+		(size 40.64 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "1b49e5b7-4948-4efa-81a6-9bfd3dedb7a8")
+		(property "Sheetname" "gnss"
+			(at 299.72 45.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gnss.kicad_sch"
+			(at 299.72 81.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 299.72 50.8 180)
+			(uuid "08a4a70e-0b6c-4cc6-8213-aff772c9d545")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SCL" input
+			(at 299.72 55.88 180)
+			(uuid "5ae469c0-3933-4929-ae4c-a4350f4b09ac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GNSS_TXRDY" output
+			(at 299.72 60.96 180)
+			(uuid "eba73639-ee89-4bcb-bf68-d06a716a300e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GNSS_RESET_N" input
+			(at 299.72 66.04 180)
+			(uuid "20aaf641-e186-4a00-a2e6-342c2ff01765")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GNSS_EXTINT" input
+			(at 299.72 71.12 180)
+			(uuid "fac92981-a25c-4e8b-a6c8-1ab145dff9b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GNSS_EN" input
+			(at 299.72 76.2 180)
+			(uuid "e87f4c70-6950-4931-9174-c1972edac02b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "cattraxv2_main"
+				(path "/1280f897-b7c2-49b2-ad35-96b72642a045"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 172.72 45.72)
+		(size 45.72 66.04)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5ec3fa1d-79f3-4b68-8bf9-883cc4fd6bef")
+		(property "Sheetname" "mcu"
+			(at 172.72 45.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 172.72 112.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 172.72 50.8 180)
+			(uuid "64a25a3c-5a97-4bb4-beb1-4e3b61c4fa71")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SCL" output
+			(at 172.72 55.88 180)
+			(uuid "575a5cc8-2677-4292-81e7-04994ac1eb92")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PMIC_INT" input
+			(at 172.72 60.96 180)
+			(uuid "31e19764-7489-4488-9a66-5965f1771764")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART_TX" output
+			(at 172.72 66.04 180)
+			(uuid "d8141eb1-cd90-46cf-9cce-2d49c159f981")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART_RX" input
+			(at 172.72 71.12 180)
+			(uuid "6a993758-2bad-4d6c-8aa0-f95c34f4353c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACC_INT1" input
+			(at 218.44 50.8 0)
+			(uuid "a1c34569-3bcc-40a0-9e5d-4eb4053a0363")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GNSS_TXRDY" input
+			(at 218.44 55.88 0)
+			(uuid "8f5e4e25-1080-405f-9f22-30c7a14b89d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GNSS_RESET_N" output
+			(at 218.44 60.96 0)
+			(uuid "7d48c504-7bb2-4f64-a59e-cb350e591f9d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GNSS_EXTINT" output
+			(at 218.44 66.04 0)
+			(uuid "6fd0a619-9640-43cf-9238-fd1ba88fc51c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GNSS_EN" output
+			(at 218.44 71.12 0)
+			(uuid "7e7a053e-e88c-4963-a708-25616b654455")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LR_SCK" output
+			(at 218.44 76.2 0)
+			(uuid "93241c1e-ed20-4403-970f-671da8d6fb40")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LR_MOSI" output
+			(at 218.44 81.28 0)
+			(uuid "9b6ea90d-f40e-449a-ae7a-16fd9455c50b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LR_MISO" input
+			(at 218.44 86.36 0)
+			(uuid "8c405533-e5d7-4981-9d63-b7ff127e1d61")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LR_NSS" output
+			(at 218.44 91.44 0)
+			(uuid "16618a0c-b9f1-4f81-939b-5b052cca9a9d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LR_IRQ" input
+			(at 218.44 96.52 0)
+			(uuid "110cb1be-47c5-47c6-b4a4-ac89ae5c6dff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LR_BUSY" input
+			(at 218.44 101.6 0)
+			(uuid "ebd333ec-f1a3-42eb-bc35-5a135e8ba861")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LR_NRESET" output
+			(at 218.44 106.68 0)
+			(uuid "34980f4b-109e-4281-9d8d-97b644ec2887")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "cattraxv2_main"
+				(path "/1280f897-b7c2-49b2-ad35-96b72642a045"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 45.72)
+		(size 40.64 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6dc581e5-049a-46f4-8803-f96e81b95e2c")
+		(property "Sheetname" "power"
+			(at 50.8 45.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 50.8 71.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 91.44 50.8 0)
+			(uuid "749248bf-ff29-4a70-a2d1-f6a667fdab9c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_SCL" input
+			(at 91.44 55.88 0)
+			(uuid "661ffe7a-aeca-40da-89fa-5d0bf24ef146")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PMIC_INT" output
+			(at 91.44 60.96 0)
+			(uuid "ea810a03-77fa-45ce-bbf4-333221eb09d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LR_VIO" output
+			(at 91.44 66.04 0)
+			(uuid "26330102-170a-4b4b-a46b-fbf2d908c4a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "cattraxv2_main"
+				(path "/1280f897-b7c2-49b2-ad35-96b72642a045"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 299.72 99.06)
+		(size 40.64 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "790df9ad-4e97-4d80-9809-d1a6050d100f")
+		(property "Sheetname" "sensors"
+			(at 299.72 98.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 299.72 119.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 299.72 104.14 180)
+			(uuid "e042b21c-ce22-4a7f-a10a-c56311076cc1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SCL" input
+			(at 299.72 109.22 180)
+			(uuid "4cf94ee8-b944-43f5-83eb-45fdb440f790")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACC_INT1" output
+			(at 299.72 114.3 180)
+			(uuid "efc472aa-68da-4849-a2a2-2f2fcb01bcfe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "cattraxv2_main"
+				(path "/1280f897-b7c2-49b2-ad35-96b72642a045"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 139.7)
+		(size 40.64 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8ec6805c-2971-48fb-9de3-8ade3840d08e")
+		(property "Sheetname" "flex_pads"
+			(at 50.8 138.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "flex_pads.kicad_sch"
+			(at 50.8 155.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ANT_915" passive
+			(at 91.44 144.78 0)
+			(uuid "8a2d5673-22c5-4289-8370-e95af3ca77c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "cattraxv2_main"
+				(path "/1280f897-b7c2-49b2-ad35-96b72642a045"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 101.6)
+		(size 40.64 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d015b8d6-46d2-475f-a675-93a8fe7cfc1c")
+		(property "Sheetname" "dock"
+			(at 50.8 100.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dock.kicad_sch"
+			(at 50.8 117.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "UART_TX" input
+			(at 91.44 106.68 0)
+			(uuid "5e293210-a083-40b7-bf58-830d05357821")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "UART_RX" output
+			(at 91.44 111.76 0)
+			(uuid "977ad287-18cc-47f5-a0bb-efb5d051f742")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "cattraxv2_main"
+				(path "/1280f897-b7c2-49b2-ad35-96b72642a045"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -28,8 +28,8 @@ electrical/**/gerber_tmp/
 *.3mf
 mechanical/out/
 
-# Datasheets: vendor PDFs stay local; datasheets/index.md is tracked
-datasheets/**/*.pdf
+# Scratch renders
+.tmp_render/
 
 # Firmware
 build/

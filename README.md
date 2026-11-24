@@ -17,7 +17,7 @@ is archived in [wdawson61/cattrax](https://github.com/wdawson61/cattrax).
 | `docs/notes/` | Dated handoff notes between domains | — |
 | `docs/checks/` | Datasheet checks behind design decisions | — |
 | `docs/decisions/` | Decision log | — |
-| `datasheets/` | Local PDFs by subsystem (not committed) + `index.md` (committed) | — |
+| `datasheets/` | Vendor PDFs by subsystem + `index.md` | — |
 | `electrical/board/` | Main board KiCad project, pin/connection table, fab outputs | elec |
 | `electrical/flex/` | Flex strip generator (`flex_strip.py` → DXF/PNG) | both |
 | `electrical/dock/` | Pogo charging + UART dock (CH343P, 1.8 V) | elec |
@@ -38,4 +38,4 @@ git clone --recurse-submodules https://github.com/wdawson61/cattraxV2.git
 
 - **Mechanical:** see `mechanical/README.md` (CadQuery; generated STEP/STL are not committed).
 - **Firmware:** see `firmware/README.md` (nRF Connect SDK, freestanding application).
-- **Datasheets:** see `datasheets/index.md`; PDFs are kept locally, not in git.
+- **Datasheets:** PDFs are committed under `datasheets/`; `datasheets/index.md` lists them.
